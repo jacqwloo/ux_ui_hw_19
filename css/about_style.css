@@ -1,0 +1,146 @@
+
+body { 
+    margin: 0px;
+    width: 100%;
+    background-color: #FFFAEE;
+
+}
+p {
+    padding: 0;
+}
+
+/* Navigation */
+.inline-block {
+    display: flex;
+    vertical-align: top;
+    flex-direction: column;
+}
+
+.link {
+    display: flex;
+    vertical-align: top;
+    flex-direction: column;
+    padding: 20px;
+    font-family: fairfax;
+}
+
+.inline-block img {
+    padding-bottom: 10px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+nav {
+    width: 100%;
+    text-align: center;
+}
+nav li {
+ padding-left: 25px;
+ padding-right: 25px;
+ padding-bottom: 0px;
+ font-family: fairfax;
+ font-size: 20px;
+}
+nav ul {
+    /* width: 100%; */
+    /* margin-left: auto; */
+    margin: 5px;
+    padding: 0px;
+}
+
+/* Hero Section */
+
+.content {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.paragraph {
+    display: flex;
+}
+
+.about {
+    padding-left: 25px;
+}
+
+.seeMoreButton {
+    padding: 15px 40px;
+    border: none;
+    border-radius: 40px;
+    background-color: #FFB0C8;
+    color: #FD0202;
+}
+
+.wenli img {
+    width: 300px;
+    height: 300px;
+}
+
+/*my skill*/
+.mySkills {
+    width: 1200px;
+    margin: 0 auto;
+}
+.skill {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    background-color:pink;
+    padding: 20px;
+}
+.skillTitle {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.skillIcon {
+    padding-right: 10px;
+}
+.skillGrid {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Footer Section */
+footer {
+    width: 1200px;
+    margin: 0 auto;
+}
+.social {
+    display: flex;
+    vertical-align: top;
+    text-align: center;
+    padding: 10px;
+}
+.social button {
+    margin: 0 auto;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 40px;
+    background-color: #D1EA8C;
+    color: #FD0202;
+}
+
+h1 {
+    text-align: center;
+    font-family: fairfax;
+    font-weight: 100;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/* FONTS */
+@font-face {
+    font-family: fairfax;
+    src: url(/fonts/fairfax.ttf);
+  }
