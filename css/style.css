@@ -118,12 +118,15 @@ nav ul {
 .project {
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 20px;
 }
-.projSectionTitle { /*cant get it to align to the right*/
+
+/*grant and i can't get this title to align to the right*/
+.projSectionTitle {
     /* display: flex;
     flex-direction: column;
     justify-content: flex-end; */
-    text-align: right;
+    text-align: left;
 }
 .projTitleRight {
     display: flex;
@@ -189,6 +192,7 @@ background-color: white;
     flex-direction: column;
     width: 1200px;
     margin: 0 auto;
+    margin-top: 20px;
 }
 
 .resume h2{
@@ -241,10 +245,12 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     padding-bottom: 30px;
+    position: relative;
 }
 
 .foot {
     text-align: right;
+    margin-top: 120px;
 }
 .social {
     display: flex;
@@ -291,6 +297,42 @@ ul {
     justify-content: center;
     align-content: center;
 }
+
+/*scrolling banner*/
+
+@keyframes banner {
+    from {
+        transform: translateX(0)
+    }
+    to {
+        transform: translateX(-100%)
+    }
+}
+
+.logos {
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    top: -90px;
+    max-width: 1200px;
+}
+
+.logos:hover .logo-slide {
+    animation-play-state: paused;
+}
+
+.logo-slide {
+    display: inline-block;
+    animation: 10s banner infinite linear;
+}
+
+
+
+
+
+
+
+
 
 /* FONTS */
 @font-face {
