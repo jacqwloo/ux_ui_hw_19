@@ -24,6 +24,10 @@ p {
     font-family: fairfax;
 }
 
+.link:hover {
+    text-decoration: underline;
+}
+
 .inline-block img {
     padding-bottom: 10px;
 }
@@ -116,9 +120,15 @@ nav ul {
     margin: 0 auto;
 }
 .projSectionTitle { /*cant get it to align to the right*/
-    display: flex;
+    /* display: flex;
     flex-direction: column;
+    justify-content: flex-end; */
     text-align: right;
+}
+.projTitleRight {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
 }
 .projSectionTitle h2 {
     background:#FD0202;
@@ -133,8 +143,8 @@ nav ul {
 
 .projSectionTitle h2:after {
     content:'';
-    bottom: 0;
-    left: 20px;
+    /* bottom: 0; */
+    /* left: 20px; */
     width: 0;
     height: 0;
     border: 20px solid transparent;
@@ -211,7 +221,7 @@ background-color: white;
     border: none;
     border-radius: 40px;
     background-color: #D1EA8C;
-    color: #FD0202;
+    color: black;
     font-size: 15px;
     display: flex;
     flex-direction: row;
@@ -256,18 +266,10 @@ footer {
     background-color: #D1EA8C;
 }
 
-.linkedin img {
-    padding-right: 10px;
-}
-
 .instagram {
     display: flex;
     flex-direction: row;
     background-color:#FFB0C8;
-}
-
-.instagram img {
-    padding-right: 10px;
 }
 
 .email {
@@ -276,8 +278,12 @@ footer {
     background-color: #A1D8F7;
 }
 
-.email img {
+.email img, .linkedin img, .instagram img {
     padding-right: 10px;
+}
+
+.email .buttonText, .linkedin .buttonText, .instagram .buttonText {
+    padding-top: 3px;
 }
 
 ul {
@@ -365,3 +371,4 @@ h3 {
         justify-content: center;
     }
 }
+
