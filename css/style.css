@@ -326,7 +326,13 @@ ul {
     animation: 10s banner infinite linear;
 }
 
-
+.iconToTop {
+    margin-right: 50px;
+    justify-content: flex-end;
+    display: flex;
+    padding: 50px;
+    height: 80px;
+}
 
 
 

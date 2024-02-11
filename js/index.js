@@ -5,7 +5,11 @@
 //     console.log("here");
 // }
 
-
+//Scroll to Top Button
+$("#toTop").click(function() {
+  $("html, body").animate({scrollTop: 0}, 1000);
+  console.log("here");
+});
 /*         glitter cursor           */
 var colour="random";
 var sparkles=50;
@@ -202,3 +206,4 @@ function newColour() {
   return ("rgb("+c[0]+", "+c[1]+", "+c[2]+")");
 }
 // ]]>
+
